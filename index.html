@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEET UG Biology MCQ Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 90%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .link {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin: 10px 0;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .link:hover {
+            background-color: #45a049;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            header {
+                padding: 15px 0;
+            }
+            .container {
+                margin: 20px auto;
+                padding: 15px;
+            }
+            .link {
+                padding: 12px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NEET UG Biology MCQ Generator</h1>
+    </header>
+    <div class="container">
+        <h2>Select an Option to Generate MCQs:</h2>
+        <a href="chatGpt/chatGpt.html" class="link">Generate from ChatGPT Prompt</a>
+        <a href="formMCQs/formMCQs.html" class="link">Generate from Pasted Raw Question Data</a>
+        <a href="fromText/fromText.html" class="link">Generate from Pasted Text Using ChatGPT</a>
+    </div>
+</body>
+</html>

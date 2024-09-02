@@ -1,0 +1,266 @@
+{
+  
+  "class_11": {
+    "Diversity in the Living World": {
+      "The Living World": [
+        "What is living?",
+        "Biodiversity",
+        "Need for classification",
+        "Three domains of life",
+        "Taxonomy and systematics",
+        "Concept of species and taxonomical hierarchy",
+        "Binomial nomenclature",
+        "Tools for study of taxonomy (museums, zoological parks, herbaria, botanical gardens)"
+      ],
+      "Biological Classification": [
+        "Five kingdom classification",
+        "Salient features and classification of Monera, Protista, Fungi, Plantae, and Animalia",
+        "Viruses, viroids, and lichens"
+      ],
+      "Plant Kingdom": [
+        "Classification of plants into major groups: algae, bryophytes, pteridophytes, gymnosperms, and angiosperms",
+        "Angiosperms: classification up to class, characteristics, and examples",
+        "Plant life cycles and alternation of generations"
+      ],
+      "Animal Kingdom": [
+        "Classification of animals: non-chordates up to phyla level, chordates up to class level",
+        "Salient features and examples of each category"
+      ]
+    },
+    "Structural Organisation in Plants and Animals": {
+      "Morphology of Flowering Plants": [
+        "Morphological features of roots, stems, leaves, flowers, fruits, and seeds",
+        "Types of inflorescence",
+        "Description of families: Fabaceae, Solanaceae, Liliaceae"
+      ],
+      "Anatomy of Flowering Plants": [
+        "Tissue systems in plants: meristematic and permanent tissues",
+        "Anatomy of dicotyledonous and monocotyledonous plants",
+        "Secondary growth"
+      ],
+      "Structural Organisation in Animals": [
+        "Animal tissues",
+        "Morphology, anatomy, and functions of different systems in earthworm, cockroach, and frog"
+      ]
+    },
+    "Cell Structure and Function": {
+      "Cell: The Unit of Life": [
+        "Cell theory and cell as the basic unit of life",
+        "Prokaryotic and eukaryotic cells",
+        "Structural organization of cell",
+        "Cell wall, cell membrane, and cell organelles (structure and function)"
+      ],
+      "Biomolecules": [
+        "Chemical constituents of living cells",
+        "Structure and function of proteins, carbohydrates, lipids, nucleic acids",
+        "Enzymes (types, properties, enzyme action)"
+      ],
+      "Cell Cycle and Cell Division": [
+        "Phases of cell cycle",
+        "Mitosis and meiosis",
+        "Significance of cell division"
+      ]
+    },
+    "Plant Physiology": {
+      "Transport in Plants": [
+        "Movement of water, gases, and nutrients",
+        "Diffusion, facilitated diffusion, active transport",
+        "Plant-water relations (imbibition, water potential, osmosis, plasmolysis)",
+        "Long-distance transport of water (absorption, apoplast, symplast, transpiration pull)",
+        "Transpiration and its role in water movement",
+        "Phloem transport (mass flow hypothesis)"
+      ],
+      "Mineral Nutrition": [
+        "Essential minerals, macro and micronutrients",
+        "Role of nitrogen in plant nutrition",
+        "Nitrogen metabolism, nitrogen cycle, biological nitrogen fixation"
+      ],
+      "Photosynthesis in Higher Plants": [
+        "Photosynthetic pigments, photophosphorylation",
+        "Light reaction, cyclic and non-cyclic, electron transport chain",
+        "Chemiosmotic hypothesis",
+        "C3 and C4 pathways",
+        "CAM pathway",
+        "Photorespiration"
+      ],
+      "Respiration in Plants": [
+        "Cellular respiration (glycolysis, fermentation, TCA cycle, electron transport system)",
+        "Energy relations (ATP)",
+        "Anaerobic respiration"
+      ],
+      "Plant Growth and Development": [
+        "Phases of growth and growth rate",
+        "Conditions for growth",
+        "Differentiation, dedifferentiation, redifferentiation",
+        "Plant hormones (auxins, gibberellins, cytokinins, ethylene, abscisic acid)",
+        "Seed dormancy, vernalization, photoperiodism"
+      ]
+    },
+    "Human Physiology": {
+      "Digestion and Absorption": [
+        "Human alimentary canal and digestive glands",
+        "Role of digestive enzymes and gastrointestinal hormones",
+        "Peristalsis, digestion, absorption, assimilation of proteins, carbohydrates, and fats",
+        "Egestion, nutritional and digestive disorders (PEM, indigestion, constipation, vomiting, jaundice, diarrhea)"
+      ],
+      "Breathing and Exchange of Gases": [
+        "Respiratory organs in humans",
+        "Mechanism of breathing, regulation of breathing, exchange of gases",
+        "Transport of oxygen and carbon dioxide",
+        "Disorders related to respiration (asthma, emphysema, occupational respiratory disorders)"
+      ],
+      "Body Fluids and Circulation": [
+        "Blood: composition, function, blood groups, clotting",
+        "Lymph: composition, function",
+        "Human circulatory system: structure and function of heart, blood vessels",
+        "Double circulation",
+        "Regulation of cardiac activity",
+        "Disorders (hypertension, coronary artery disease, angina, heart failure)"
+      ],
+      "Excretory Products and their Elimination": [
+        "Human excretory system: structure and function",
+        "Urine formation, regulation of kidney function",
+        "Role of other organs in excretion",
+        "Disorders (uraemia, renal failure, kidney stones)"
+      ],
+      "Locomotion and Movement": [
+        "Types of movement: amoeboid, ciliary, muscular",
+        "Skeletal system and its functions",
+        "Disorders (myasthenia gravis, muscular dystrophy, arthritis, osteoporosis)"
+      ],
+      "Neural Control and Coordination": [
+        "Human neural system: central and peripheral nervous system",
+        "Neurons: structure, types, function",
+        "Generation and conduction of nerve impulse",
+        "Reflex action and reflex arc",
+        "Sensory reception and processing",
+        "Disorders (Alzheimer’s, Parkinson’s, epilepsy)"
+      ],
+      "Chemical Coordination and Integration": [
+        "Endocrine glands and hormones",
+        "Human endocrine system",
+        "Mechanism of hormone action",
+        "Disorders (diabetes, hyperthyroidism, hypothyroidism)"
+      ]
+    }
+  },
+  "class_12": {
+    "Reproduction": {
+      "Reproduction in Organisms": [
+        "Asexual and sexual reproduction",
+        "Life spans of organisms",
+        "Events in sexual reproduction",
+        "Pre-fertilization, fertilization, and post-fertilization events"
+      ],
+      "Sexual Reproduction in Flowering Plants": [
+        "Structure of a flower",
+        "Development of male and female gametophytes",
+        "Pollination types and agents",
+        "Double fertilization",
+        "Post-fertilization events: endosperm and embryo development, seed formation"
+      ],
+      "Human Reproduction": [
+        "Male and female reproductive systems",
+        "Gametogenesis (spermatogenesis and oogenesis)",
+        "Menstrual cycle",
+        "Fertilization, implantation, pregnancy, embryonic development",
+        "Parturition and lactation"
+      ],
+      "Reproductive Health": [
+        "Importance and problems",
+        "Prevention of sexually transmitted diseases (STDs)",
+        "Contraception, family planning",
+        "Medical termination of pregnancy (MTP)",
+        "Infertility and assisted reproductive technologies (ART)"
+      ]
+    },
+    "Genetics and Evolution": {
+      "Principles of Inheritance and Variation": [
+        "Mendelian inheritance",
+        "Deviations from Mendelian genetics",
+        "Chromosomal theory of inheritance",
+        "Linkage and recombination",
+        "Sex determination",
+        "Mutation",
+        "Genetic disorders (Mendelian and chromosomal)"
+      ],
+      "Molecular Basis of Inheritance": [
+        "Structure and replication of DNA",
+        "RNA types and functions",
+        "Transcription, translation",
+        "Regulation of gene expression",
+        "Human Genome Project",
+        "DNA fingerprinting"
+      ],
+      "Evolution": [
+        "Origin of life",
+        "Theories and evidence of evolution",
+        "Adaptive radiation",
+        "Hardy-Weinberg principle",
+        "Human evolution"
+      ]
+    },
+    "Biology and Human Welfare": {
+      "Human Health and Disease": [
+        "Common diseases (infectious and non-infectious)",
+        "Immunity and vaccination",
+        "AIDS, cancer",
+        "Drugs and alcohol abuse"
+      ],
+      "Strategies for Enhancement in Food Production": [
+        "Plant breeding, tissue culture, SCP",
+        "Animal husbandry",
+        "Apiculture, pisciculture",
+        "Biofortification"
+      ],
+      "Microbes in Human Welfare": [
+        "Microbes in household and industrial products",
+        "Sewage treatment, biogas production",
+        "Microbes as biocontrol agents and biofertilizers"
+      ]
+    },
+    "Biotechnology and its Applications": {
+      "Biotechnology: Principles and Processes": [
+        "Principles of genetic engineering and bioprocessing",
+        "Tools of recombinant DNA technology",
+        "Process of recombinant DNA technology"
+      ],
+      "Biotechnology and its Applications": [
+        "Application in health and agriculture",
+        "Genetically modified organisms (GMOs)",
+        "Biotechnological applications in medicine",
+        "Gene therapy",
+        "Transgenic animals",
+        "Ethical issues in biotechnology"
+      ]
+    },
+    "Ecology and Environment": {
+      "Organisms and Populations": [
+        "Population attributes and growth models",
+        "Interactions: mutualism, competition, predation, parasitism",
+        "Adaptations in organisms"
+      ],
+      "Ecosystem": [
+        "Ecosystem components and structure",
+        "Energy flow and nutrient cycling",
+        "Ecological pyramids",
+        "Ecological succession",
+        "Ecosystem services"
+      ],
+      "Biodiversity and Conservation": [
+        "Levels of biodiversity",
+        "Biodiversity loss",
+        "Conservation strategies",
+        "Biodiversity hotspots",
+        "Protected areas: national parks, sanctuaries, biosphere reserves"
+      ],
+      "Environmental Issues": [
+        "Pollution types and control",
+        "Waste management",
+        "Climate change, global warming",
+        "Ozone depletion",
+        "Deforestation and its impact"
+      ]
+    }
+  }
+}

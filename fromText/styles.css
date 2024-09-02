@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.selector {
+    margin-bottom: 20px;
+}
+
+.selector label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.selector select {
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.selector button {
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.selector button:hover {
+    background-color: #218838;
+}
+
+#loading-bar {
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 10px;
+    display: none;
+}
+
+#loading-bar div {
+    height: 100%;
+    width: 0;
+    background-color: #007bff;
+    transition: width 0.1s ease;
+}
+
+.question-viewer {
+    text-align: left;
+    display: none; /* Hide initially */
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#question-sequence {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#options-list {
+    list-style: none;
+    padding: 0;
+}
+
+#options-list li {
+    background-color: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+#options-list li:hover {
+    background-color: #dee2e6;
+}
+
+#options-list li.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+#nextQuestion, #postToTelegram, #generateQuestions {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#nextQuestion:hover {
+    background-color: #0056b3;
+}
+
+#explanation {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    text-align: left;
+}

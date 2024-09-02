@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEET-UG Biology MCQs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NEET-UG Biology MCQs</h1>
+
+        <!-- Textarea for pasting MCQ data -->
+        <div class="textarea-container">
+            <label for="mcqTextarea">Paste Data to Generate MCQs:</label>
+            <textarea id="mcqTextarea" rows="10" cols="100" placeholder="Paste the text data here"></textarea>
+            <button id="generateQuestions">Generate Questions</button>
+        </div>
+
+        <!-- Progress Bar -->
+        <div id="loading-bar">
+            <div></div>
+        </div>
+
+        <!-- Question Viewer Section -->
+        <div class="question-viewer">
+            <div id="question-container">
+                <div id="question-sequence">Question 1/10</div>
+                <h2 id="question-text">Loading question...</h2>
+                <ul id="options-list"></ul>
+            </div>
+            <input type="checkbox" id="selectQuestion"> Select this question
+            <div id="explanation" style="display: none;"></div>
+            <button id="nextQuestion">Next</button>
+            <button id="postToTelegram" style="display: none;">Post Selected to Telegram</button>
+        </div>
+    </div>
+
+    <script>
+        let currentQuestionIndex = 0;
+        let questions = [];
+        let selectedQuestions = [];
+
+        document.getElementById('generateQuestions').addEventListener('click', async () => {
+            const mcqTextarea = document.getElementById('mcqTextarea').value.trim();
+
+            if (!mcqTextarea) {
+                alert('Please paste the data to generate MCQs.');
+                return;
+            }
+
+            showLoadingBar(true);
+
+            try {
+                const response = await fetch('http://127.0.0.1:5003/api/generate-questions', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ inputText: mcqTextarea })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to generate questions.');
+                }
+
+                const data = await response.json();
+                questions = data.questions;
+                currentQuestionIndex = 0;
+
+                showLoadingBar(false);
+                displayQuestion();
+
+                document.getElementById('postToTelegram').style.display = 'inline-block';
+            } catch (error) {
+                showLoadingBar(false);
+                console.error('Error generating questions:', error);
+                alert('Failed to generate questions. Please try again.');
+            }
+        });
+
+        function displayQuestion() {
+            if (currentQuestionIndex >= questions.length) {
+                alert('You have completed all questions.');
+                return;
+            }
+
+            const question = questions[currentQuestionIndex];
+            document.getElementById('question-sequence').textContent = `Question ${currentQuestionIndex + 1}/${questions.length}`;
+            document.getElementById('question-text').textContent = question.question;
+
+            const optionsList = document.getElementById('options-list');
+            optionsList.innerHTML = '';
+
+            question.options.forEach(option => {
+                const li = document.createElement('li');
+                li.textContent = option;
+                li.addEventListener('click', () => {
+                    document.querySelectorAll('#options-list li').forEach(item => item.classList.remove('selected'));
+                    li.classList.add('selected');
+                    showExplanation(question.explanation);
+                });
+                optionsList.appendChild(li);
+            });
+
+            const selectQuestionCheckbox = document.getElementById('selectQuestion');
+            selectQuestionCheckbox.checked = selectedQuestions.includes(question);
+            selectQuestionCheckbox.onchange = () => {
+                if (selectQuestionCheckbox.checked) {
+                    selectedQuestions.push(question);
+                } else {
+                    selectedQuestions = selectedQuestions.filter(q => q !== question);
+                }
+            };
+
+            document.querySelector('.question-viewer').style.display = 'block';
+        }
+
+        document.getElementById('nextQuestion').addEventListener('click', () => {
+            currentQuestionIndex++;
+            displayQuestion();
+        });
+
+        function showLoadingBar(show) {
+            const loadingBar = document.getElementById('loading-bar');
+            const loadingProgress = loadingBar.querySelector('div');
+
+            if (show) {
+                loadingBar.style.display = 'block';
+                let progress = 0;
+                const interval = setInterval(() => {
+                    progress += 10;
+                    loadingProgress.style.width = progress + '%';
+
+                    if (progress >= 100) {
+                        clearInterval(interval);
+                    }
+                }, 100);
+            } else {
+                loadingBar.style.display = 'none';
+                loadingProgress.style.width = '0';
+            }
+        }
+
+        function showExplanation(explanation) {
+            const explanationDiv = document.getElementById('explanation');
+            explanationDiv.textContent = explanation;
+            explanationDiv.style.display = 'block';
+        }
+
+        document.getElementById('postToTelegram').addEventListener('click', async () => {
+            if (selectedQuestions.length === 0) {
+                alert('Please select at least one question to post to Telegram.');
+                return;
+            }
+
+            try {
+                const response = await fetch('http://127.0.0.1:5003/api/post-to-telegram', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ questions: selectedQuestions })
+                });
+
+                if (response.ok) {
+                    alert('Selected questions posted to Telegram successfully!');
+                } else {
+                    alert('Failed to post to Telegram.');
+                }
+            } catch (error) {
+                console.error('Error posting to Telegram:', error);
+                alert('Failed to post to Telegram. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>

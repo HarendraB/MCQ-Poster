@@ -1,0 +1,21 @@
+# Ignore all .log files
+*.log
+
+# Ignore the `temp` directory
+temp/
+
+# Ignore all files with a .tmp extension
+*.tmp
+
+# Ignore a specific file
+secrets.txt
+
+# Ignore all files inside a specific directory
+/build/
+
+# Ignore all .env files
+*.env
+
+config.py
+
+config.js

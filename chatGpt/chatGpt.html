@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEET-UG Biology MCQs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NEET-UG Biology MCQs</h1>
+
+        <!-- Selector Section -->
+        <div class="selector">
+            <label for="classSelect">Select Class:</label>
+            <select id="classSelect">
+                <option value="">Select Class</option>
+            </select>
+
+            <label for="topicSelect">Select Topic:</label>
+            <select id="topicSelect">
+                <option value="">Select Topic</option>
+            </select>
+
+            <label for="subtopicSelect">Select Sub-topic:</label>
+            <select id="subtopicSelect">
+                <option value="">Select Sub-topic</option>
+            </select>
+
+            <label for="underSubtopicSelect">Select Specific Topic:</label>
+            <select id="underSubtopicSelect">
+                <option value="">Select Specific Topic</option>
+            </select>
+
+            <button id="fetchQuestions">Fetch Questions</button>
+        </div>
+
+        <!-- Progress Bar -->
+        <div id="loading-bar">
+            <div></div>
+        </div>
+
+        <!-- Question Viewer Section -->
+        <div class="question-viewer">
+            <div id="question-container">
+                <div id="question-sequence">Question 1/10</div>
+                <h2 id="question-text">Loading question...</h2>
+                <ul id="options-list"></ul>
+            </div>
+            <div id="explanation" style="display: none;"></div>
+            <input type="checkbox" id="select-question" /> Select this question
+            <button id="nextQuestion">Next</button>
+            <button id="postToTelegram" style="display: none;">Post Selected to Telegram</button>
+            <button id="postToFirebase">Post to Firebase</button>
+        </div>
+    </div>
+
+    <!-- Link to external scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
+    <script src="script.js"></script>
+    <script src="pushToFirebase.js"></script>
+</body>
+</html>
